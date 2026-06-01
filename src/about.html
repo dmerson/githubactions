@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - digitalArizona</title>
+    <style>
+        :root {
+            --primary: #0A7EA4;
+            --accent: #D32F2F;
+            --muted-bg: #f7f8fa;
+            --border: #d6dce3;
+            --text-muted: #666666;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: var(--muted-bg);
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .banner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .banner img {
+            max-width: 300px;
+            height: auto;
+        }
+        nav {
+            background-color: var(--primary);
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.2s, opacity 0.2s;
+        }
+        nav a:hover {
+            color: #f0c0c0;
+            opacity: 0.95;
+        }
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: var(--accent);
+            margin: 30px 0 12px;
+        }
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 24px;
+            margin-top: 16px;
+        }
+        .team-card {
+            background: var(--muted-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+        }
+        .team-card .avatar {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+        }
+        .team-card h3 {
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        .team-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        .values-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 16px;
+            margin-top: 12px;
+        }
+        .values-list li {
+            background: var(--muted-bg);
+            border-left: 4px solid var(--accent);
+            padding: 12px 16px;
+            border-radius: 0 6px 6px 0;
+        }
+        .values-list li strong {
+            display: block;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+        footer {
+            background-color: var(--muted-bg);
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/digitalArizona-logo-color.svg" alt="digitalArizona Logo">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>About digitalArizona</h1>
+        <p>digitalArizona is a software solutions company built by Arizonans, for Arizona. We partner with businesses, nonprofits, and communities across the state to design and deliver technology that drives real impact.</p>
+
+        <h2>Our Mission</h2>
+        <p>To accelerate Arizona's digital future by building software solutions that are practical, scalable, and rooted in the needs of our local communities.</p>
+
+        <h2>Our Story</h2>
+        <p>Founded in Phoenix, digitalArizona grew out of a simple observation: too many local organizations were being left behind by rapidly changing technology. Our founders set out to change that — creating a firm that combines enterprise-grade engineering with genuine community investment.</p>
+        <p>Today we serve clients from Tucson to Flagstaff, delivering web platforms, mobile applications, data integrations, and custom software tailored to each organization's unique goals.</p>
+
+        <h2>Our Values</h2>
+        <ul class="values-list">
+            <li><strong>Local First</strong>Arizona is our home. We prioritize partnerships that strengthen the Arizona economy and community.</li>
+            <li><strong>Transparency</strong>No hidden fees, no black-box processes. You always know what we're building and why.</li>
+            <li><strong>Quality</strong>We ship software we're proud to put our name on — tested, documented, and built to last.</li>
+            <li><strong>Accessibility</strong>Digital solutions should work for everyone. We build with inclusion as a core requirement, not an afterthought.</li>
+        </ul>
+
+        <h2>Meet the Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="avatar">JM</div>
+                <h3>Jordan Mesa</h3>
+                <p>Co-Founder &amp; CEO</p>
+            </div>
+            <div class="team-card">
+                <div class="avatar">RP</div>
+                <h3>Rosa Pima</h3>
+                <p>Co-Founder &amp; CTO</p>
+            </div>
+            <div class="team-card">
+                <div class="avatar">TS</div>
+                <h3>Tyler Sonoran</h3>
+                <p>Lead Engineer</p>
+            </div>
+            <div class="team-card">
+                <div class="avatar">AV</div>
+                <h3>Alma Verde</h3>
+                <p>UX &amp; Design</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 digitalArizona. All rights reserved.</p>
+    </footer>
+</body>
+</html>
